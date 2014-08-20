@@ -1,0 +1,34 @@
+---
+metadata:
+    display_name: Checkboxes
+
+
+data: |
+    <div class="experiment" >
+      <p style="width:110px;word-wrap:break-word;font-size:15px">实验要求：</p>
+      <textarea id="requirement" type="text" value="" style="position:relative;width:891px;height:70px;font-family:'Arial Normal','Arial';font-weight:400;font-style:normal;font-size:13px;text-decoration:none;color:#000000;text-align:left"/>
+      <p></p>
+      <p style="width:110px;word-wrap:break-word;font-size:15px">实验环境：</p>
+      <textarea id="environment" type="text" value="" style="position:relative;width:891px;height:70px;font-family:'Arial Normal','Arial';font-weight:400;font-style:normal;font-size:13px;text-decoration:none;color:#000000;text-align:left"/>
+      <p></p>
+      <div style="width:13%;margin:auto;">
+      <input id="enter_experiment" type="submit" value="进入实验" style="text-align:center;position:ralative;width:100px;height:25px;font-family:'Arial Normal','Arial';font-weight:400;font-style:normal;font-size:17px;text-decoration:none;color:#000000;text-align:center"/>
+      </div>
+      <p style="width:110px;word-wrap:break-word;font-size:15px">实验结果：</p>
+      <textarea id="result" type="text" value="" style="width:891px;height:70px;font-family:'Arial Normal','Arial';font-weight:400;font-style:normal;font-size:13px;text-decoration:none;color:#000000;text-align:left"/>
+      <p></p>
+      <div style="width:13%;margin:auto;">
+      <input id="answer" type="submit" value="参考答案" align="center" style="margin:auto;width:100px;height:25px;font-family:'Arial Normal','Arial';font-weight:400;font-style:normal;font-size:17px;text-decoration:none;color:#000000;text-align:center"/>
+      </div>
+      <p></p>
+      <tr>
+      <td colspan="2">
+      <div style="width:30%;margin:auto;">
+      <input id="sub" type="submit" value="提交" style="width:100px;height:25px;font-family:'Arial Normal','Arial';font-weight:400;font-style:normal;font-size:17px;text-decoration:none;color:#000000;text-align:center"/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="reset" type="submit" value="重置" style="width:100px;height:25px;font-family:'Arial Normal','Arial';font-weight:400;font-style:normal;font-size:17px;text-decoration:none;color:#000000;text-align:center"/>
+      </div>
+      </td>
+      </tr>
+     </div>
+

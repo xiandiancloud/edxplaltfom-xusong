@@ -1,0 +1,29 @@
+---
+metadata:
+    display_name: Iaas Install
+data: |
+        <script type="text/javascript">
+            require(["jquery", "jquery.cookie"], function($) {
+            $('form#register_form').submit(function(e) {
+                e.preventDefault();
+                var submit_data = $('#register_form').serialize();
+                $.ajax({
+                url: '/test_ajax',
+                type: 'POST',
+                dataType: 'json',
+                data: submit_data,
+                headers: {'X-CSRFToken': $.cookie('csrftoken')},
+                success: function(json) {
+                    //location.href = "/course/";
+                    document.getElementById("myDiv").innerHTML=json.data;
+                },
+                });
+               });
+            });
+        </script>
+        <div id="myDiv"></div>
+        <form id="register_form" method="post">
+            <input id="name" type="text" name="name" /><br/>
+            <input id="number" type="text" name="number" /><br/>
+            <button type="submit" id="submit" name="submit" >Test</button>
+        </form>
